@@ -1,9 +1,11 @@
-void main() {
-  //create objects form class
+import 'dart:io';
 
+void main() {
+  print("Your Name ,Please! :");
+  String name = stdin.readLineSync()!;
   Users users = Users(
-    userName: "Ahmed",
-    password: 1215458,
+    "Your name is : $name",
+    1215458,
     email: "ahmedtamerfoc2000@gmail.com",
   ); // create "objects" => Class name then object name = Class name();
 
@@ -13,11 +15,11 @@ void main() {
 //create class (Users)
 class Users {
   // Properties (Variables)
-  String? userName;
-  int? password;
+  String userName;
+  int password;
   String? email;
 
-  Users({this.userName, this.password, this.email});
+  Users(this.userName, this.password, {this.email});
 
   // Methods (functions)
   void printUserInfo() {

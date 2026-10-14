@@ -1,6 +1,5 @@
 void main() {
   Employee employee = Employee("Ahmed");
-  employee.name = "Ahmed";
 }
 
 class Users {
@@ -11,7 +10,7 @@ class Users {
 
 class Employee extends Users {
   // Super to inheret from constructor in the first class
-  Employee(super.name) : super() {
+  Employee(super.name) {
     print("=> $name");
   }
 }

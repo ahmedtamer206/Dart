@@ -13,7 +13,7 @@ void main() {
 class Users {
   String? username;
 
-  Users([this.username]);
+  Users(this.username);
   Users.const1(this.username);
   Users.const2({this.username});
 
