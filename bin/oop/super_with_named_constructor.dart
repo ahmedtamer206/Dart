@@ -1,4 +1,5 @@
 void main() {
+  // ignore: unused_local_variable
   Employee employee = Employee.manager('Ahmed');
 }
 
