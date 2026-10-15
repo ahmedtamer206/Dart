@@ -8,8 +8,8 @@ void main() {
 
   Employees employees2 = Employees();
   employees2.addCount(); //1
-  employees2.printCount();
-  print(Employees.count);
+  employees2.printCount(); // Count:4
+  print(Employees.count); // 4
 }
 
 class Employees {
